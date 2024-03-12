@@ -1,0 +1,61 @@
+[ @file = "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappApp.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappApp.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappApp.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappApp.mc"; @line = 5; ]
+class kiteappApp extends Application.AppBase{
+    [ @file = "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappApp.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappApp.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappApp.mc"; @line = 7; ]
+    function initialize() as Void {
+_Users_paulnelsonbecker_Documents_garmin_kiteapp_kiteapp_source_kiteappApp_mc_7_26_9_4_start:
+[ "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappApp.mc" 8 8 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_paulnelsonbecker_Documents_garmin_kiteapp_kiteapp_source_kiteappApp_mc_7_26_9_4_stop:
+    }
+    [ @file = "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappApp.mc"; @line = 12; ]
+    function onStart(state as Dictionary or Null) as Void {
+    }
+    [ @file = "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappApp.mc"; @line = 16; ]
+    function onStop(state as Dictionary or Null) as Void {
+    }
+    [ @file = "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappApp.mc"; @line = 20; ]
+    function getInitialView() as [Views] or [Views, InputDelegates] {
+_Users_paulnelsonbecker_Documents_garmin_kiteapp_kiteapp_source_kiteappApp_mc_20_68_22_4_start:
+[ "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappApp.mc" 21 8 ]
+        %tmp.1 = newa 2;
+        %tmp.5 = getv ? :kiteappView;
+        %tmp.2 = newc %tmp.5 ();
+        %tmp.6 = dup %tmp.1;
+        %tmp.7 = aputv %tmp.6 0 %tmp.2;
+        %tmp.11 = getv ? :kiteappDelegate;
+        %tmp.8 = newc %tmp.11 ();
+        %tmp.12 = dup %tmp.7;
+        %tmp.13 = aputv %tmp.12 1 %tmp.8;
+        ret %tmp.13;
+_Users_paulnelsonbecker_Documents_garmin_kiteapp_kiteapp_source_kiteappApp_mc_20_68_22_4_stop:
+    }
+}
+[ @file = "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappApp.mc"; @line = 26; ]
+function getApp() as kiteappApp {
+_Users_paulnelsonbecker_Documents_garmin_kiteapp_kiteapp_source_kiteappApp_mc_26_32_28_0_start:
+[ "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappApp.mc" 27 4 ]
+    %tmp.1 = getm $.Toybox.Application;
+    %tmp.2 = getv function %tmp.1 :getApp;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.4 = as %tmp.3 kiteappApp;
+    ret %tmp.4;
+_Users_paulnelsonbecker_Documents_garmin_kiteapp_kiteapp_source_kiteappApp_mc_26_32_28_0_stop:
+}
+[ @file = "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappApp.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,46 @@
+[ @file = "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappDelegate.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappDelegate.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappDelegate.mc"; @line = 4; ]
+class kiteappDelegate extends WatchUi.BehaviorDelegate{
+    [ @file = "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappDelegate.mc"; @line = 6; ]
+    function initialize() as Void {
+_Users_paulnelsonbecker_Documents_garmin_kiteapp_kiteapp_source_kiteappDelegate_mc_6_26_8_4_start:
+[ "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappDelegate.mc" 7 8 ]
+        %tmp.2 = getv ? :BehaviorDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_paulnelsonbecker_Documents_garmin_kiteapp_kiteapp_source_kiteappDelegate_mc_6_26_8_4_stop:
+    }
+    [ @file = "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappDelegate.mc"; @line = 10; ]
+    function onMenu() as Boolean {
+_Users_paulnelsonbecker_Documents_garmin_kiteapp_kiteapp_source_kiteappDelegate_mc_10_33_13_4_start:
+[ "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappDelegate.mc" 11 8 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :pushView;
+        %tmp.6 = getv ? :Rez;
+        %tmp.7 = getv %tmp.6 :Menus;
+        %tmp.8 = getv function ? %tmp.7 :MainMenu;
+        %tmp.3 = newc %tmp.8 ();
+        %tmp.12 = getv ? :kiteappMenuDelegate;
+        %tmp.9 = newc %tmp.12 ();
+        %tmp.13 = getm $.Toybox.WatchUi;
+        %tmp.14 = getv %tmp.13 :SLIDE_UP;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.9, %tmp.14);
+[ "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappDelegate.mc" 12 8 ]
+        %tmp.15 = true;
+        ret %tmp.15;
+_Users_paulnelsonbecker_Documents_garmin_kiteapp_kiteapp_source_kiteappDelegate_mc_10_33_13_4_stop:
+    }
+}
+[ @file = "/Users/paulnelsonbecker/Documents/garmin/kiteapp/kiteapp/source/kiteappDelegate.mc"; @line = 1; ]
+<init> {
+}
